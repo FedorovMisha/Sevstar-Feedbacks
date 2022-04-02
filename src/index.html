@@ -9367,8 +9367,9 @@ var _EPYT_ = {"ajaxurl":"https:\/\/sevstar.net\/wp-admin\/admin-ajax.php","secur
 			line-height: 18px;
 			padding-left: 11px;
 		}
-		
-		#userName: {
+
+		.userName: {
+			color: #365881!important;
 			font-style: normal;
 			font-weight: 600;
 			font-size: 15px;
@@ -9383,10 +9384,21 @@ var _EPYT_ = {"ajaxurl":"https:\/\/sevstar.net\/wp-admin\/admin-ajax.php","secur
 			font-size: 15px;
 			line-height: 20px;
 		}
-		
+
+
+		#buttonsStack {
+			padding-top: 20px;
+			display: flex;
+			justify-content: space-between;
+		}
+
+		#setUpFeedback {
+			padding-left: 45px;
+		}
+
 		#aboutUs {
 			line-height: 15px;
-			font-family: 'Open Sans';
+			font-family: 'Open Sans'!important;
 		}
 	</style>
 	<link
@@ -12398,7 +12410,7 @@ var _EPYT_ = {"ajaxurl":"https:\/\/sevstar.net\/wp-admin\/admin-ajax.php","secur
 																							
 																							<div id="userData">
 																								
-																								<div id="userName">Иван Иванов</div>
+																								<div class="userName">Иван Иванов</div>
 																								<div id="commentDate">1 авг 2020 в 20:22</div>
 																							</div>
 																							
@@ -12417,7 +12429,7 @@ var _EPYT_ = {"ajaxurl":"https:\/\/sevstar.net\/wp-admin\/admin-ajax.php","secur
 																							
 																							<div id="userData">
 																								
-																								<div id="userName">Иван Иванов</div>
+																								<div class="userName">Иван Иванов</div>
 																								<div id="commentDate">1 авг 2020 в 20:22</div>
 																							</div>
 																							
@@ -12436,7 +12448,7 @@ var _EPYT_ = {"ajaxurl":"https:\/\/sevstar.net\/wp-admin\/admin-ajax.php","secur
 																							
 																							<div id="userData">
 																								
-																								<div id="userName">Иван Иванов</div>
+																								<div class="userName">Иван Иванов</div>
 																								<div id="commentDate">1 авг 2020 в 20:22</div>
 																							</div>
 																							
@@ -12451,10 +12463,14 @@ var _EPYT_ = {"ajaxurl":"https:\/\/sevstar.net\/wp-admin\/admin-ajax.php","secur
 																				</div>
 																				
 																		</div>
-																		<div class="buttonsStack">
-																		<div class="buttons">
+																		<div id="buttonsStack">
+																			<div id="setUpFeedback">
 																			<a href=""
-																				class="btn btn-yellow rounded-40 small"><span class="animate-hover"></span><span class="animate-focus"></span><span class="label">Все новости</span></a>
+																			class="btn btn-yellow rounded-40 small"><span class="animate-hover"></span><span class="animate-focus"></span><span class="label">Оставить отзыв</span></a>
+																			</div>
+																		<div class="buttons">
+																					<a href="?spage=" class="btn btn-yellow small m-r-sm disabled" disabled="disabled"><span class="animate-hover"></span><span class="animate-focus"></span><span class="label visible-sm visible-md visible-lg">Предыдущие</span><span class="label visible-xs">←</span></a>
+																					<a href="?spage=2" class="btn btn-yellow small "><span class="animate-hover"></span><span class="animate-focus"></span><span class="label visible-sm visible-md visible-lg">Следующие</span><span class="label visible-xs">→</span></a>
 																		</div>
 																		</div>
 																	</div>
